@@ -21,7 +21,7 @@ func Start() {
 	router.GET("/*path", func(context *gin.Context) {
 		path := context.Param("path")
 		context.JSON(200, gin.H{
-			"message": "You connected to the following path: " + path,
+			"message": "!!!You connected to the following path: " + path,
 			"path": path,
 		})
 	})
